@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace BizSecureDemo_22180011.ViewModels;
-public class LoginVm
+public class LoginVm 
 {
     [Required, EmailAddress]
     public string Email { get; set; } = "";

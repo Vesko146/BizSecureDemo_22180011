@@ -23,7 +23,7 @@ public class HomeController : Controller
              .ToListAsync();
 
          return View(orders);
-     }*/
+     }*/ 
     public async Task<IActionResult> Index()
     {
         var uid = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!); //Взима ID-то на логнатия потребител

@@ -39,7 +39,7 @@ public class OrdersController : Controller
     {
         // Обърнете внимание: търсим само по Id, без проверка за собственост
         var order = await _db.Orders.FirstOrDefaultAsync(o => o.Id == id);
-        if (order == null) return NotFound();
+        if (order == null) return NotFound(); 
         return View(order);
     }*/
     public async Task<IActionResult> Details(int id)

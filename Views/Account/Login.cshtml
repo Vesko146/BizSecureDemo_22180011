@@ -11,7 +11,7 @@
         </div>
         <div class="mb-2">
             <label class="form-label">Password</label>
-            <input class="form-control" asp-for="Password" type="password" />
+            <input class="form-control" asp-for="Password" type="password" /> 
         </div>
         <div class="text-danger small">
             @foreach (var e in ViewData.ModelState.Values.SelectMany(v => v.Errors))
